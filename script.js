@@ -24,8 +24,8 @@ $(document).ready(function () {
 
     function fetchStockData() {
         const spreadsheetId = '1ZCrAgbbSFc6T5uFuI75R-rQxtVAsFSWGiBzFDrh5cEg';
-        const apiKey = 'YOUR_API_KEY_HERE'; // Thay bằng API Key của bạn
-        const range = 'Sheet1!A1:Z';
+        const apiKey = 'AIzaSyDkbOAdPSdoWK0MrKyp775XqAxHWrhlAkA'; // Thay bằng API Key của bạn
+        const range = 'DASHBOARD!A1:Z';
         const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}?key=${apiKey}`;
 
         $.getJSON(url, function (response) {
